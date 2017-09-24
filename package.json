@@ -1,0 +1,23 @@
+{
+  "name": "campgrounds",
+  "version": "1.0.0",
+  "description": "Just learning.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stellargo/campgrounds.git"
+  },
+  "author": "stellargo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/stellargo/campgrounds/issues"
+  },
+  "homepage": "https://github.com/stellargo/campgrounds#readme",
+  "dependencies": {
+    "ejs": "^2.5.7",
+    "express": "^4.15.4"
+  }
+}
