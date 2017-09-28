@@ -10,22 +10,24 @@ mongoose.connect("mongodb://localhost/yelp_camp");
 //schema
 var campgroundschema = new mongoose.Schema({
 	name:String,
-	image:String
+	image:String,
+	description:String
 });
 var Campground = mongoose.model("Campground",campgroundschema);
 
-// Campground.create(
-// 	{
-// 		name:"dinosaur park", 
-// 		image:"http://img1.sunset.timeinc.net/sites/default/files/styles/1000x1000/public/image/2016/10/main/hoodview-campground-0510.jpg?itok=B8Eb65Uf"
-// 	}, function(err,campground){
-// 		if (err){
-// 			console.log(err);
-// 		}else{
-// 			console.log(campground);
-// 		}
-// 	}
-// );
+Campground.create(
+	{
+		name:"dinosaur park", 
+		image:"http://img1.sunset.timeinc.net/sites/default/files/styles/1000x1000/public/image/2016/10/main/hoodview-campground-0510.jpg?itok=B8Eb65Uf",
+		description:"Huge beautiful place you must visit!"
+	}, function(err,campground){
+		if (err){
+			console.log(err);
+		}else{
+			console.log(campground);
+		}
+	}
+);
 
 app.get("/",function(req,res){
 	res.render("landing")
